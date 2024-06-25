@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reserva_butaca">
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="410dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv1_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:onClick="lleva_act_principal"
+            android:text="Acceso"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tv2_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="contactame"
+            android:text="Contacto"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tv3_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:onClick="vuelve_inicio"
+            android:text="Inicio"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="414dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/iv2_ini"
+            android:layout_width="119dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="lleva_act_principal"
+            app:srcCompat="@drawable/usua"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/iv3_ini"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="contactame"
+            app:srcCompat="@drawable/reserva"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/iv4_ini"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="vuelve_inicio"
+            app:srcCompat="@drawable/ini"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv2_reserva"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:fontFamily="monospace"
+            android:text="Elige el asiento que desea:"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv1_reserva"
+                android:layout_width="81dp"
+                android:layout_height="49dp"
+                android:onClick="but1"
+                app:srcCompat="@drawable/butaca"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/iv2_reserva"
+                android:layout_width="74dp"
+                android:layout_height="48dp"
+                android:onClick="but2"
+                app:srcCompat="@drawable/butaca"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/iv3_reserva"
+                android:layout_width="15dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:onClick="but3"
+                app:srcCompat="@drawable/butaca"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/iv4_reserva"
+                android:layout_width="13dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:onClick="but4"
+                app:srcCompat="@drawable/butaca"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/iv5_reserva"
+                android:layout_width="12dp"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:onClick="but5"
+                app:srcCompat="@drawable/butaca"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="335dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv6_reserva"
+                android:layout_width="77dp"
+                android:layout_height="match_parent"
+                android:onClick="but6"
+                app:srcCompat="@drawable/butaca"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/iv7_reserva"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:onClick="but7"
+                app:srcCompat="@drawable/butaca"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/iv8_reserva"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="but8"
+                app:srcCompat="@drawable/butaca"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/iv9_reserva"
+                android:layout_width="59dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="but9"
+                app:srcCompat="@drawable/butaca"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv3_reserva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="monospace"
+            android:text="¿Desea continuar?"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout18"
+        android:layout_width="407dp"
+        android:layout_height="62dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout12"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv1_res_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:fontFamily="monospace"
+            android:text="Progreso de la reserva..."
+            android:textStyle="italic" />
+
+        <ProgressBar
+            android:id="@+id/barra2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="235dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="80dp"
+            android:max="100"
+            android:progress="67"
+            android:progressTint="#23DDE4" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="403dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout18"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rb1_reserva"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="70dp"
+                android:fontFamily="monospace"
+                android:minHeight="48dp"
+                android:text="Sí"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="425dp" />
+
+            <RadioButton
+                android:id="@+id/rb2_reserva"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:text="No"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="174dp"
+                tools:layout_editor_absoluteY="425dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/b1_reserva"
+                android:layout_width="122dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="140dp"
+                android:backgroundTint="#E8AF4C"
+                android:fontFamily="monospace"
+                android:onClick="continua"
+                android:text="Continuar"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="473dp" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

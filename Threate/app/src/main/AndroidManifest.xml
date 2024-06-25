@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Reserva_butaca"
+            android:exported="true"
+            android:theme="@style/Theme.Estilos"/>
+        <activity
+            android:name=".Acceso_cuenta"
+            android:exported="true"
+            android:theme="@style/Theme.Estilos" />
+        <activity
+            android:name=".Contacto"
+            android:exported="true"
+            android:theme="@style/Theme.Estilos" />
+        <activity
+            android:name=".Resumen_reserva"
+            android:exported="true"
+            android:theme="@style/Theme.Estilos" />
+        <activity
+            android:name=".Reserva"
+            android:exported="true"
+            android:theme="@style/Theme.Estilos" />
+        <activity
+            android:name=".Detalle_obra_innom"
+            android:exported="true"
+            android:theme="@style/Theme.Estilos" />
+        <activity
+            android:name=".Detalle_obra_lotto"
+            android:exported="true"
+            android:theme="@style/Theme.Estilos" />
+        <activity
+            android:name=".Catalogo_obras"
+            android:exported="true"
+            android:theme="@style/Theme.Estilos" />
+        <activity
+            android:name=".Intro"
+            android:exported="true"
+            android:theme="@style/Theme.Estilos">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Forma_acceso"
+            android:exported="true"
+            android:theme="@style/Theme.Estilos" />
+    </application>
+
+</manifest>

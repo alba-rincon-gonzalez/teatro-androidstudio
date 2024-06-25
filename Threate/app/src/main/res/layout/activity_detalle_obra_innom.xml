@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detalle_obra_innom">
+
+    <LinearLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="410dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv1_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:onClick="lleva_act_principal"
+            android:text="Acceso"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tv2_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="contactame"
+            android:text="Contacto"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tv3_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:onClick="vuelve_inicio"
+            android:text="Inicio"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="414dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv2_ini"
+            android:layout_width="119dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="lleva_act_principal"
+            app:srcCompat="@drawable/usua"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/iv3_ini"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="contactame"
+            app:srcCompat="@drawable/reserva"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/iv4_ini"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="vuelve_inicio"
+            app:srcCompat="@drawable/ini"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="394dp"
+        android:layout_height="532dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv1_innom"
+            android:layout_width="268dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="70dp"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv1_innom"
+            android:layout_width="235dp"
+            android:layout_height="247dp"
+            android:layout_marginLeft="80dp"
+            app:srcCompat="@drawable/obra_innombrables" />
+
+        <TextView
+            android:id="@+id/tv2_innom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:text="Los Innombrables es una comedia policíaca cuyos protagonistas, Genaro y Trini, intentan alejarse de sus mediocres vidas tramando un plan demasiado sofisticado para sus capacidades. 24 horas antes del asalto, la Sole, una indeseable vecina chismosa que todos detestaríamos tener, se entera de sus intenciones y decide unirse a la misión. Cuando todo parece que no puede ir a peor, entra en juego Fermín, el sobrino de la Sole, que dará un toque aún más absurdo a la banda. Mediocridad, avaricia y mucha comedia. "
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout19"
+        android:layout_width="407dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout21"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/b1_innom"
+            android:layout_width="132dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="60dp"
+            android:backgroundTint="#E8AF4C"
+            android:fontFamily="monospace"
+            android:onClick="reserva_detallada"
+            android:text="Reservar"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/b2_innom"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#E8AF4C"
+            android:fontFamily="monospace"
+            android:text="Ir a la web"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

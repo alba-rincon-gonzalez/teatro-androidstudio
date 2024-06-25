@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Catalogo_obras">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv1_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:onClick="lleva_act_principal"
+            android:text="Acceso"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tv2_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="contactame"
+            android:text="Contacto"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tv3_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:onClick="vuelve_inicio"
+            android:text="Inicio"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv2_ini"
+            android:layout_width="119dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="lleva_act_principal"
+            app:srcCompat="@drawable/usua"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/iv3_ini"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="contactame"
+            app:srcCompat="@drawable/reserva"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/iv4_ini"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="mensaje_toast"
+            app:srcCompat="@drawable/ini"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="388dp"
+        android:layout_height="524dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/tv1_ini"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:fontFamily="monospace"
+                android:text="ENTRADAS"
+                android:textAlignment="center"
+                android:textColor="#3C6097"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="42dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/tv2_ini"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:onClick="detalle_innom"
+                android:text="Los innombrables"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="79dp" />
+
+            <TextView
+                android:id="@+id/tv3_ini"
+                android:layout_width="181dp"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:onClick="detalle_lotto"
+                android:text="Lotto"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="229dp"
+                tools:layout_editor_absoluteY="72dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ib1_ini"
+                android:layout_width="201dp"
+                android:layout_height="260dp"
+                android:onClick="detalle_innom"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/obra_innombrables"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="127dp" />
+
+            <ImageButton
+                android:id="@+id/ib2_ini"
+                android:layout_width="183dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:onClick="detalle_lotto"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/obra_lotto"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:layout_editor_absoluteY="136dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv4_ini"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:text="80 minutos"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="57dp" />
+
+            <TextView
+                android:id="@+id/tv5_ini"
+                android:layout_width="130dp"
+                android:layout_height="31dp"
+                android:fontFamily="monospace"
+                android:text="90 minutos"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="266dp"
+                tools:layout_editor_absoluteY="57dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:id="@+id/b1_ini"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#E8AF4C"
+                android:fontFamily="monospace"
+                android:onClick="detalle_innom"
+                android:text="Información"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="157dp" />
+
+
+            <Button
+                android:id="@+id/b2_ini"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#E8AF4C"
+                android:fontFamily="monospace"
+                android:onClick="detalle_lotto"
+                android:text="Información"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="246dp"
+                tools:layout_editor_absoluteY="155dp" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

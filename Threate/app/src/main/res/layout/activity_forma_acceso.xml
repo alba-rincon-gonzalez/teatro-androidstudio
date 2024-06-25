@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forma_acceso">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="400dp"
+        android:layout_height="402dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31">
+
+        <ImageView
+            android:id="@+id/iv1_crea_cuenta"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            app:srcCompat="@drawable/usuario" />
+
+        <TextView
+            android:id="@+id/tv1_pAct"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="monospace"
+            android:hint="Opciones de acceso:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:text="Opciones de acceso:" />
+
+        <CheckBox
+            android:id="@+id/cb1_pAct"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="monospace"
+            android:text="Con cuenta"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb2_pAct"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="monospace"
+            android:text="Como invitado"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/b1_pAct"
+            android:layout_width="163dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#E8AF4C"
+            android:fontFamily="monospace"
+            android:onClick="continuar"
+            android:text="Continuar"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

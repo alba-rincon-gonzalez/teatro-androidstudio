@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resumen_reserva">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="414dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/iv2_ini"
+            android:layout_width="119dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="lleva_act_principal"
+            app:srcCompat="@drawable/usua"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/iv3_ini"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="contactame"
+            app:srcCompat="@drawable/reserva"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/iv4_ini"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="vuelve_inicio"
+            app:srcCompat="@drawable/ini"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="410dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv1_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:onClick="lleva_act_principal"
+            android:text="Acceso"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tv2_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="contactame"
+            android:text="Contacto"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tv3_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:onClick="vuelve_inicio"
+            android:text="Inicio"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="404dp"
+        android:layout_height="586dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv1_resumen"
+            android:layout_width="355dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="monospace"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv2_resumen"
+            android:layout_width="298dp"
+            android:layout_height="113dp"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="monospace"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv3_resumen"
+            android:layout_width="134dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="monospace"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv4_resumen"
+            android:layout_width="134dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="monospace"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv5_resumen"
+            android:layout_width="356dp"
+            android:layout_height="94dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:background="#E8AF4C"
+            android:fontFamily="monospace"
+            android:text="Gracias por reservar con nosotros! Debe pagar en taquilla "
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv1_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="monospace"
+            android:text="Progreso de la reserva..."
+            android:textStyle="italic" />
+
+        <ProgressBar
+            android:id="@+id/barra3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="235dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="80dp"
+            android:background="#FDFAF7"
+            android:max="100"
+            android:progress="100"
+            android:progressTint="#23DDE4" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
